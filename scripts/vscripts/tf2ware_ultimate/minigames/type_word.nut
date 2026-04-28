@@ -85,7 +85,7 @@ words <-
 	"Prophunt"
 	"Smash"
 	"TF2Ware"
-	"Arclight"
+	"Redsun"
 	"Frog"
 	"Meow"
 	"Cat"

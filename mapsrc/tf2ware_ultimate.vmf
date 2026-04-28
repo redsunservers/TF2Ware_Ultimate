@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8870"
-	"mapversion" "386"
+	"mapversion" "380"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -74,7 +74,7 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "4"
+	"nGridSpacing" "1"
 }
 palette_plus
 {
@@ -164,7 +164,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "386"
+	"mapversion" "380"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites_trainyard"
 	"detailvbsp" "detail_trainyard.vbsp"
@@ -727062,13 +727062,13 @@ entity
 	"angles" "-0 -180 0"
 	"color" "255 255 255 255"
 	"font" "0"
-	"message" "Special thanks to\nthe arclight.tf\ncommunity"
+	"message" "Special thanks to redsun.tf servers\n    for playtesting and feedback"
 	"orientation" "0"
 	"rainbow" "0"
 	"textsize" "12"
 	"textspacingX" "0"
 	"textspacingY" "0"
-	"origin" "479 11344 -4760"
+	"origin" "480 11206 -4792"
 	editor
 	{
 		"color" "220 30 220"
@@ -727099,11 +727099,40 @@ entity
 }
 entity
 {
+	"id" "528046"
+	"classname" "info_overlay"
+	"angles" "0 0 0"
+	"BasisNormal" "1 0 0"
+	"BasisOrigin" "464 11424 -4768"
+	"BasisU" "0 1 0"
+	"BasisV" "0 0 1"
+	"EndU" "1"
+	"EndV" "0"
+	"fademindist" "-1"
+	"material" "tf2ware_ultimate/redsun"
+	"sides" "106077"
+	"StartU" "0"
+	"StartV" "1"
+	"uv0" "-48 -48 0"
+	"uv1" "-48 48 0"
+	"uv2" "48 48 0"
+	"uv3" "48 -48 0"
+	"origin" "464 11424 -4768"
+	editor
+	{
+		"color" "80 150 225"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
+	}
+}
+entity
+{
 	"id" "528101"
 	"classname" "info_overlay"
 	"angles" "0 0 0"
 	"BasisNormal" "1 0 0"
-	"BasisOrigin" "468 11268.2 -4744.2"
+	"BasisOrigin" "468 11264 -4736"
 	"BasisU" "0 1 0"
 	"BasisV" "0 0 1"
 	"EndU" "1"
@@ -727113,11 +727142,11 @@ entity
 	"sides" "106077"
 	"StartU" "0"
 	"StartV" "1"
-	"uv0" "-71.8003 -71.7999 0"
-	"uv1" "-71.8003 71.7999 0"
-	"uv2" "71.8003 71.7999 0"
-	"uv3" "71.8003 -71.7999 0"
-	"origin" "468 11268.2 -4744.2"
+	"uv0" "-57.6 -57.6 0"
+	"uv1" "-57.6 57.6 0"
+	"uv2" "57.6 57.6 0"
+	"uv3" "57.6 -57.6 0"
+	"origin" "468 11264 -4736"
 	editor
 	{
 		"color" "80 150 225"
@@ -763708,18 +763737,18 @@ entity
 }
 entity
 {
-	"id" "830584"
+	"id" "816392"
 	"classname" "func_instance"
-	"angles" "-0 0 0"
+	"angles" "0 0 0"
 	"file" "pinball/course.vmf"
-	"fixup_style" "0"
-	"origin" "0.000396728 0.000534058 9216"
+	"fixup_style" "2"
+	"origin" "0.000274658 0.000518799 9216"
 	editor
 	{
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
+		"logicalpos" "[0 5000]"
 	}
 }
 cameras
@@ -763727,8 +763756,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[8374.29 1335.92 7452.49]"
-		"look" "[8298.08 1581.93 7518.61]"
+		"position" "[3529.27 2684.18 -11490.8]"
+		"look" "[3491.22 2425.77 -11540.6]"
 	}
 	camera
 	{

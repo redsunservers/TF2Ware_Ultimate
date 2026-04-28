@@ -11,8 +11,6 @@ minigame <- Ware_MinigameData
 highest_player <- null
 highest_height <- 0.0
 target_height  <- 1400.0
-bonus_height   <- 2000.0
-bonus_players  <- []
 
 bird <- null
 bird_model <- "models/props_forest/dove.mdl"
@@ -58,13 +56,6 @@ function OnUpdate()
 		
 		if (height > target_height)
 			Ware_PassPlayer(player, true)
-		
-		if (height > bonus_height)
-		{
-			local idx = bonus_players.find(player)
-			if(idx == null)
-				bonus_players.append(player)
-		}
 	}
 }
 
@@ -73,8 +64,7 @@ function OnEnd()
 	if (highest_height > 512.0 && highest_player.IsValid())
 	{
 		Ware_ChatPrint(null, "{player} {color}reached the highest point at {str} units!",
-			highest_player, TF_COLOR_DEFAULT, format("%.1f", highest_height))
+							highest_player, TF_COLOR_DEFAULT, format("%.1f", highest_height))
+		Ware_GiveBonusPoints(highest_player)
 	}
-	
-	Ware_GiveBonusPoints(bonus_players)
 }
